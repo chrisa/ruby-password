@@ -1,3 +1,4 @@
+require 'rake/dsl_definition'
 require 'rake'
 
 begin
@@ -16,6 +17,8 @@ encryption of passwords.}
     gem.add_dependency "ruby-termios"
     gem.add_development_dependency "shoulda"
     gem.extensions = FileList['extconf.rb']
+    gem.files.include 'lib/*'
+    gem.files.include 'rbcrack.c'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
