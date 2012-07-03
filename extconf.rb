@@ -6,7 +6,7 @@ require 'mkmf'
 
 search_dicts = %w(
   /usr/lib64/cracklib_dict.pwd
-  /opt/local/share/cracklib/cracklib_dict.pwd
+  /opt/local/share/cracklib/pw_dict.pwd
   /usr/local/lib/pw_dict.pwd
   /usr/lib/pw_dict.pwd
   /opt/lib/pw_dict.pwd
