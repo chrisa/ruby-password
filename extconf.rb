@@ -44,8 +44,8 @@ hfile.printf("#define CRACK_DICT \"%s\"\n", crack_dict)
 hfile.close
 
 # OS X - default to checking /opt/local for cracklib
-if Config::CONFIG['target_os'] =~ /^darwin/
-  dir_config('opt', '/opt/local/include', '/opt/local/lib')
+if RbConfig::CONFIG['target_os'] =~ /^darwin/
+  dir_config('crack', '/opt/local/include', '/opt/local/lib')
 end
 
 have_header('crack.h') && have_library('crack', 'FascistCheck') or exit 1
