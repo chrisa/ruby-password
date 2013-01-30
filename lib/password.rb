@@ -20,7 +20,7 @@
 #   Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
 
-require 'crack'
+require File.expand_path('crack', File.dirname(__FILE__))
 require 'termios'
 
 
